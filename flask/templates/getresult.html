@@ -1,0 +1,34 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Result</title>
+	</head>
+	<body>
+		<div class="image-wrap">
+			<!-- Update the src to your real image path -->
+			<img src="/static/result.png" alt="Result image" />
+
+			<!-- Text on top of the image -->
+			<div class="overlay-text">
+				<div>
+					<h1>Enter Your Grades</h1>
+					<p>Grade will be redirected for evaluation</p>
+					<br />
+					<form action="/submit" method="post" style="display:inline-block; text-align:left; background: rgba(0,0,0,0.35); padding: 14px; border-radius: 10px;">
+						<label for="science">Science</label><br />
+						<input id="science" name="science" type="number" value="0" /><br /><br />
+						<label for="maths">Maths</label><br />
+						<input id="maths" name="maths" type="number" value="0" /><br /><br />
+						<label for="datascience">Data Science</label><br />
+						<input id="datascience" name="datascience" type="number" value="0" /><br /><br />
+						<button type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
